@@ -274,6 +274,7 @@
 }
 
 .card_text {
+    flex-shrink: 0;
     padding: 0 40px 50px 40px;
     color: #FFF;
     font-family: Raleway, Arial, sans-serif;
@@ -353,7 +354,7 @@
 .footer {
     display:flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content:space-between;  
     padding:180px 50px 90px;
 }
 
@@ -381,4 +382,13 @@
 
 .footer__social-list-item {
    list-style-type: none;
+}
+
+.footer__social-link {
+    height:100%;
+}
+
+.footer__social-icon {
+    height:100%;
+    width:100%;
 }
