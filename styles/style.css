@@ -247,7 +247,6 @@
 .card_title,
 .card_text {
     z-index: 2;
-    text-align: left;
 }
 
 .card_flex {
