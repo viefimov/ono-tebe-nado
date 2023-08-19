@@ -219,14 +219,12 @@
 .card-link {
     display: flex;
     text-decoration: none;
-    position: relative;
     height:100%;
     width: 100%;
 }
   
 .card {
-    width:100%;  
-    position: relative;
+    width:100%;
     color: #fff;
     display: flex;
     height: 100%;
@@ -257,13 +255,12 @@
     height:100%;
     width:100%;
     justify-content: space-between;
+    align-content:space-around;
+    padding: 50px 40px 50px 40px;
 }
 
 .card_title {
     width:100%;
-    padding-top:50px;
-    padding-left:40px;
-    padding-right:40px;
     color: #FFF;
     font-family: Raleway, Arial, sans-serif;
     font-size: 22px;
@@ -276,9 +273,8 @@
 }
 
 .card_text {
-  width:100%;
+    width:100%;
     flex-shrink: 0;
-    padding: 0 40px 50px 40px;
     color: #FFF;
     font-family: Raleway, Arial, sans-serif;
     font-size: 20px;
