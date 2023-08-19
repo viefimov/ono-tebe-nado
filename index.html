@@ -10,51 +10,55 @@
     <link rel="stylesheet"  href="./styles/style.css">
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav class= "header_menu">
         <ul class="header_links-list">
           <li class="header_links-list-item header_link_active_item">
             <a class="header_link header_link_active" href="#">главная</a>
           </li>
           <li class="header_links-list-item">
-            <span class="dot"></span>
             <a class="header_link" href="#lots">посмотреть лоты</a>
           </li>
           <li class="header_links-list-item">
-            <span class="dot"></span>
             <a class="header_link" href="#about">об аукционе</a>
           </li>
         </ul>
       </nav>
-      <div class="logo_div" >
-        <a href="#">
+        <a href="#" class="header_logo-link">
       <img src="./images/logo-black.svg" class="header_logo-image" alt="Логотип компании 'Оно тебе надо'">
         </a>
-      </div>
       <div class="adress">
-        <a class="contact" href="tel:+99995555555">+9 999 555 5555</a> <br>
-        <a class="contact" href="mailto:info@sobaka.ge">info@sobaka.ge</a> <br>
-        <a>наб. Принсенграхт 263-265,<br> Амстердам</a>
+        <a class="contact" href="tel:+99995555555">+9 999 555 5555</a> 
+        <a class="contact" href="mailto:info@sobaka.ge">info@sobaka.ge</a> 
+        <p>наб. Принсенграхт 263-265, Амстердам</p>
       </div>
     </header>
     <main>
       <section class="title_section">
-        <img src="./images/cover.jpg" class="title_background" alt="фоновое изображение с цветами">
+        <div class="overlay">
         <h1 class="title_text">
-          <span class="title_text_item title_text_first">Он
-            <span class="title_text_letter">о</span></span> 
-          <span class="title_text_item title_text_second">теб
-            <span class="title_text_letter">е</span></span> 
-          <span class="title_text_item title_text_third">
-            <span class="title_text_letter_right">н</span>
-            ад
-            <span class="letter_o">о</span></span>
+          <span class="aligned-text">
+            <span class="letter-spacing">О</span>
+            <span class="letter-spacing-extended">н</span>
+            <span class="no-letter-spacing">о</span>
+          </span> 
+          <span class="aligned-text_center">
+            <span class="letter-spacing">те</span>
+            <span class="letter-spacing-extended">б</span>
+            <span class="no-letter-spacing">е</span>
+          </span> 
+          <span class="aligned-text_right">
+            <span class="letter-spacing-extended">н</span>
+            <span class="letter-spacing">ад</span>
+            <span class="no-letter-spacing">о</span>
+          </span>
         </h1>
         <div class="title_footer">
-          <a class="title_footer_text">Аукцион    вещей,    в    которые    никто    не     верил</a>
+          <p class="title_footer_text">Аукцион    вещей,    в    которые    никто    не     верил</p>
+          <button class="title_footer_button" type="button">
+            Сделать ставку
+          </button>
         </div>
-        <div class="title_footer_button">
-          <a class="title_footer_button_text" href="#">Сделать ставку</a>
         </div>
       </section>
       <section class="lots" id="lots">
@@ -63,38 +67,44 @@
           <li class="lots__card-list-item">
             <a href="#" class="card-link">
               <article class="card card_type_film">
-                <img src="./images/card-lot-01.jpg" class="card-img" alt="фоновое изображение с цветами">
-                <div class="overlay"></div>
-                <h3 class="card_title">Фильм режиссёра, который  бросил киношколу</h3>
-                <p class="card_text">Не просто бросил, а ушёл с первой лекции. 
-                  Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-                </p>
+                <div class="overlay">
+                  <div class="card_flex">
+                    <h3 class="card_title">Фильм режиссёра, который  бросил киношколу</h3>
+                    <p class="card_text">Не просто бросил, а ушёл с первой лекции. 
+                      Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+                    </p>
+                </div>
+              </div>
               </article>
             </a>
           </li>
           <li class="lots__card-list-item">
             <a href="#" class="card-link">
               <article class="card card_type_book">
-                <img src="./images/card-lot-02.jpg" class="card-img" alt="фоновое изображение с цветами">
-                <div class="overlay"></div>
-                <h3 class="card_title">Книга, где описан один скучный день из жизни рекламного агента</h3>
-                <p class="card_text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. 
-                  В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён.
-                   И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
-                  </p>
+                <div class="overlay">
+                  <div class="card_flex">
+                    <h3 class="card_title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+                    <p class="card_text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. 
+                      В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён.
+                      И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
+                    </p>
+                  </div>
+                </div>
               </article>
             </a>
           </li>
           <li class="lots__card-list-item">
             <a href="#" class="card-link">
-              <img src="./images/card-lot-03.jpg" class="card-img" alt="фоновое изображение с цветами">
-              <div class="overlay"></div>
               <article class="card card_type_picture">
-                <h3 class="card_title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
-                <p class="card_text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. 
-                  Никаких полей, лесов, котиков… 
-                  Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?
-                </p>
+                <div class="overlay">
+                  <div class="card_flex">
+                    <h3 class="card_title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+                    <p class="card_text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. 
+                      Никаких полей, лесов, котиков… 
+                      Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?
+                    </p>
+                </div>
+                  </div>
               </article>
             </a>
           </li>
@@ -120,9 +130,11 @@
       </section>
     </main>
     <footer class="footer">
-      <address class="adress"><a class="contact" href="tel:+99995555555">+9 999 555 5555</a> <br>
-        <a class="contact" href="mailto:info@sobaka.ge">info@sobaka.ge</a> <br>
-        <a>наб. Принсенграхт 263-265,<br> Амстердам</a></address>
+      <address class="adress">
+        <a class="contact" href="tel:+99995555555">+9 999 555 5555</a> 
+        <a class="contact" href="mailto:info@sobaka.ge">info@sobaka.ge</a> 
+        <p>наб. Принсенграхт 263-265, Амстердам</p>
+      </address>
       <nav>
         <ul class="footer_links-list">  
           <li class="footer_links-list-item header_link_active_item">
