@@ -354,7 +354,7 @@
 .footer {
     display:flex;
     align-items: flex-start;
-    justify-content:space-between;  
+    justify-content: space-between;
     padding:180px 50px 90px;
 }
 
@@ -375,20 +375,12 @@
 }
 
 .footer__social-list {
-    flex-grow:0;
+    max-width:240px;
     display: flex;
     gap:48px;
+    
 }
 
 .footer__social-list-item {
    list-style-type: none;
-}
-
-.footer__social-link {
-    height:100%;
-}
-
-.footer__social-icon {
-    height:100%;
-    width:100%;
 }
