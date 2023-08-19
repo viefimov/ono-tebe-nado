@@ -56,7 +56,6 @@
 }
 
 .adress {
-    max-width:240px;
     display:flex;
     flex-direction: column;
     height:100%;
@@ -260,8 +259,6 @@
 }
 
 .card_title {
-    flex-wrap:nowrap;
-    flex-shrink: 0;
     padding-top:50px;
     padding-left:40px;
     padding-right:40px;
@@ -277,7 +274,6 @@
 }
 
 .card_text {
-    flex-shrink: 0;
     padding: 0 40px 50px 40px;
     color: #FFF;
     font-family: Raleway, Arial, sans-serif;
@@ -378,6 +374,7 @@
 }
 
 .footer__social-list {
+    flex-grow:0;
     display: flex;
     gap:48px;
 }
