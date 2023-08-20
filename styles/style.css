@@ -1,8 +1,8 @@
 .header {
-    display:flex;
+    display:grid;
+    grid-template-columns: 1fr 148px 1fr;
     align-items: center;
     justify-content: space-between;
-    height:100%;
     padding: 92px 50px 92px 50px;
 }
 
@@ -10,19 +10,18 @@
     max-height: 105px;
 }
 
-.header_logo-link {
-    padding-right: 145px;
+.header .adress {
+    justify-self: flex-end;
 }
-
 
 .header_links-list {
     width:100%;
     display:flex;
+    gap:32px;
 }
 
 .header_links-list-item {
     list-style-type: circle;
-    padding-right: 32px;
     font-family: Raleway, Arial, sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -53,12 +52,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: 135%;
+    
 }
 
 .adress {
-    display:flex;
-    flex-direction: column;
-    height:100%;
+  max-width:240px;
 }
 
 .contact {
@@ -67,20 +65,23 @@
 }
 
 .cover {
+    position:relative;
     width: 100%;
     height:100%;
     background: url("../images/cover.jpg") no-repeat center / cover;
+    
 }
 
 .overlay {
+    background-color: rgba(0,0,0,0.6);
     height: 100%;
     width:100%;
-    background-color: rgba(0,0,0,0.6);
+    position:absolute;
+    z-index: 1;
 }
 
 .cover__title {
-    width: 100%;
-    height:100%;
+    position:relative;
     z-index: 3;
     display: flex;
     gap:20px;
@@ -89,6 +90,13 @@
     padding-top: 165px;
     padding-bottom:135px;
     padding: 165px 50px 135px 50px;
+    color: #FFF;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 100%;
 }
 
 .letter-spacing-extended {
@@ -106,13 +114,7 @@
 .aligned-text {
     display: flex;
     justify-content: flex-start;
-    color: #FFF;
-    font-family: Raleway, Arial, sans-serif;
-    font-size: 100px;
-    font-style: normal;
-    font-weight: 700;
     line-height: 115%;
-    text-transform: uppercase;
     width:100%;
     height:100%;
 }
@@ -121,41 +123,28 @@
     width: 100%;
     height:100%;
     display: flex;
-    color: #FFF;
     justify-content: center;
-    font-family: Raleway, Arial, sans-serif;
-    font-size: 100px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100%;
-    text-transform: uppercase;
     padding-right: 60px;
 }
 
 .aligned-text_right {
     display: flex;
-    color: #FFF;
     justify-content: flex-end;
-    font-family: Raleway, Arial, sans-serif;
-    font-size: 100px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100%;
-    text-transform: uppercase;
     height:100%;
     width: 100%;
 }
 
 .cover__description {
+    position:relative;
     display: flex;
     justify-content: flex-end;
     padding: 0 50px 50px 50px;
     gap: 80px;
+    z-index:3;
 }
 
 .cover__description-text {
-    white-space: pre;
-    z-index: 3;
+    word-spacing: 20px;
     color: #FFF;
     align-self:center;
     text-align: center;
@@ -230,6 +219,7 @@
     height: 100%;
     flex-direction: column;
     justify-content: flex-start;
+    position:relative;
 }
 
 .card_type_film {
