@@ -1,6 +1,6 @@
 .header {
     display:grid;
-    grid-template-columns: 1fr 148px 1fr;
+    grid-template-columns: 1fr minmax(0 ,148px) 1fr;
     align-items: center;
     justify-content: space-between;
     padding: 92px 50px 92px 50px;
@@ -56,9 +56,10 @@
 }
 
 .adress {
-  display: flex;
-  flex-direction:column;
-  flex-wrap:nowrap;
+    display: flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    max-width: 240px;
 }
 
 .contact {
@@ -71,7 +72,6 @@
     width: 100%;
     height:100%;
     background: url("../images/cover.jpg") no-repeat center / cover;
-    
 }
 
 .overlay {
@@ -80,6 +80,8 @@
     width:100%;
     position:absolute;
     z-index: 1;
+    top:0;
+    left:0;
 }
 
 .cover__title {
@@ -87,10 +89,7 @@
     z-index: 3;
     display: flex;
     gap:20px;
-    justify-content: center;
     flex-direction: column;
-    padding-top: 165px;
-    padding-bottom:135px;
     padding: 165px 50px 135px 50px;
     color: #FFF;
     font-family: Raleway, Arial, sans-serif;
@@ -115,25 +114,21 @@
 
 .aligned-text {
     display: flex;
-    justify-content: flex-start;
-    line-height: 115%;
     width:100%;
     height:100%;
 }
 
+.aligned-text_left {
+    justify-content: flex-start;
+    line-height: 115%;
+}
+
 .aligned-text_center {
-    width: 100%;
-    height:100%;
-    display: flex;
     justify-content: center;
-    padding-right: 60px;
 }
 
 .aligned-text_right {
-    display: flex;
     justify-content: flex-end;
-    height:100%;
-    width: 100%;
 }
 
 .cover__description {
@@ -194,7 +189,7 @@
   
 .lots__card-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     padding: 0;
     list-style: none;
     width:100%;
@@ -225,14 +220,20 @@
 }
 
 .card_type_film {
+    width: 100%;
+    height:100%;
     background: url("../images/card-lot-01.jpg") no-repeat center / 100%;
 }
 
 .card_type_book {
+    width: 100%;
+    height:100%;
     background: url("../images/card-lot-02.jpg") no-repeat center / 100%;
 }
 
 .card_type_picture {
+    width: 100%;
+    height:100%;
     background: url("../images/card-lot-03.jpg") no-repeat center / 100%;
 }
 
@@ -354,7 +355,7 @@
     flex-direction:column;
     text-align:center;
     color: #000;
-    font-family: Raleway;
+    font-family: Raleway, Arial, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
